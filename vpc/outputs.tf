@@ -21,7 +21,7 @@ output "vpc_id" {
 
 # export the internet gateway
 output "internet_gateway" {
-  value = aws_internet_gateway.internet_gateway.id
+  value = aws_internet_gateway.internet_gateway
 }
 
 # export the public subnet az1 id
