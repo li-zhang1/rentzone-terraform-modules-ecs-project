@@ -29,5 +29,5 @@ resource "aws_appautoscaling_policy" "ecs_policy" {
     disable_scale_in   = false 
   }
 
-  depends_on = [aws_appautoscaling_target.ecs_asg.id]
+  depends_on = [aws_appautoscaling_target.ecs_asg]
 }
