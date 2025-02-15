@@ -12,3 +12,8 @@ output "application_load_balancer_dns_name" {
 output "application_load_balancer_zone_id" {
   value = aws_lb.application_load_balancer.zone_id
 }
+
+# export the domain name
+output "domain_name" {
+  value = var.domain_name
+}
